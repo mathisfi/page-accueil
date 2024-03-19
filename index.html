@@ -3,23 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
+<title>Vidéo en plein écran avec son</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
   }
-  .contact-info {
-    margin-top: 50px;
-    font-size: 24px;
-    color: #333;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 </style>
 </head>
 <body>
-  <div class="contact-info">
-    <p>Contactez moi à <a href="mailto:contact@mathisfi.com">contact@mathisfi.com</a></p>
-  </div>
+
+<video autoplay loop>
+  <source src="video.mov" type="video/quicktime">
+  <!-- Vous pouvez ajouter d'autres sources pour d'autres formats de vidéo -->
+  Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+</video>
+
 </body>
 </html>
+
